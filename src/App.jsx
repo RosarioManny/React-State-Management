@@ -35,29 +35,39 @@ const App = () => {
     // This adds figther
     const addedFighter = [...team, addedMem];
     setTeam(addedFighter);
+    
     // Removes fighter from List of Options
     const figtherId = zombieFighters.indexOf(addedMem);
     const removeFighter = zombieFighters.splice(figtherId, 1)
-    // setZombieFighters(removeFighter)
+    // setZombieFighters(zombieFigthers removeFighter)
   }
 
+  const handleTeam = () => {
+    if(team.length = 0) {
+        <p>Pick Some Team Members</p>
+    } 
+    else { team.map((teamMember) => (
+       return(
+       <p key={teamMember.name}>
+        <b>{teamMember.name}</b> :: Strength: {teamMember.strength} || Agility: {teamMember.agility}
+      </p> ) 
+      ))
+    }
+  }
   
   return (
     <>
      <h1>ReactVille IN PERIL!</h1>
      <h2>Current Cash: <b>${money}</b></h2>
+     <h2>Your Team</h2>
+     <p>{handleTeam()}</p>
+     <ul>
+     </ul>
+     <hr/>
      <ul>
       {listFighter}
      </ul>
-     <h2>Your Team</h2>
-     <ul>
-        {team.map((teamMember) => (
-          <li key={teamMember.name}>
-            {teamMember.name}
-
-          </li> 
-        ))}
-     </ul>
+     
     </>
    
   );
