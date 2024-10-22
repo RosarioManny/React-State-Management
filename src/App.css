@@ -1,9 +1,59 @@
 ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+h1:hover {
+  animation-name: Reactville;
+  animation-duration: 2s;
+}
+
+@keyframes Reactville {
+  0% {color: white;}
+  40% {color: grey;}
+  75% {color: black;}
+  80% {color: red;}
+  100% {color: pink;}
 }
 
 li {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  background-color: #181D23;
   list-style: none;
   margin: 10px;
+  border-radius: 10%;
+  font-weight: bold;
+}
+
+b {
+  text-decoration-line: underline;
+  font-size: 1.3rem;
+}
+
+p {
+  margin: .5rem  0;
+  font-size: 1rem;
+}
+
+img {
+  object-fit: contain;
+}
+button {
+  margin: 1rem 0 0 0 ;
+}
+button:hover { 
+  color: #020E1D;
+  background: #2EBD50;
+  border: 2px solid #034412;
+}
+
+div { 
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
 }
