@@ -68,6 +68,7 @@ const App = () => {
      <ul>
        {listTeam}
      </ul>
+      <hr width="750"/>
       <hr width="500"/>
      <ul>
       {listFighter}

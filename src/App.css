@@ -6,7 +6,7 @@ ul {
 
 h1:hover {
   animation-name: Reactville;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 @keyframes Reactville {
@@ -50,10 +50,12 @@ button:hover {
   color: #020E1D;
   background: #2EBD50;
   border: 2px solid #034412;
-}
-
+} 
 div { 
   display: flex;
   flex-flow: column wrap;
+  justify-content: center ;
   text-align: center;
+  width: 100vw;
+
 }
